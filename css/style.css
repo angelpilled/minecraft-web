@@ -1,6 +1,6 @@
 :root {
     --header-padding: 7px;
-    --navigation-padding: 10px;
+    --navigation-padding: 15px;
     --navigation-margins: 10px;
 }
 
@@ -17,10 +17,25 @@ header {
     text-align: right;
     background-color: rgb(0, 0, 0);
     padding-right: 30px;
+    font-size: 0.95rem;
 }
 
 nav {
-    background-color: rgb(32, 32, 32);
+    background-color: #171615;
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav > div{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+nav, header {
+    text-transform: uppercase;
 }
 
 header li, nav li{
@@ -39,14 +54,33 @@ nav li {
 
 header a, nav a {
     text-decoration: none;
+    color: white;
 }
 
-.nav-right {
-    float: right
-}
+.nav-right button {
+    min-width: 10.3rem;
+    height: 3.25rem;
+    margin-top: var(--navigation-margins); 
+    margin-bottom: var(--navigation-margins); 
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.05rem;
+    background-color: #3c8527;
+    border-left: 4px solid #043403;
+    border-right: 4px solid #043403;
+    border-top: 4px solid #50804f;
+    border-bottom: 4px solid #50804f;
+    color: white;
+} 
 
 nav ul {
     display: inline;
+}
+
+#minecraft-logo{
+    width: 240px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-image img{
